@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Louie May Bargasa — Résumé</title>
+<style>
+  :root {
+    --bg: #f3f1ea;
+    --paper: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #4a4a4a;
+    --rule: #1a1a1a;
+    --faint: #e3e0d8;
+    --shadow: rgba(30, 28, 24, 0.14);
+    --serif: Georgia, "Times New Roman", "Liberation Serif", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141310;
+      --paper: #1e1c17;
+      --fg: #ece8df;
+      --muted: #b4aea2;
+      --rule: #ece8df;
+      --faint: #38352d;
+      --shadow: rgba(0, 0, 0, 0.5);
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--serif);
+    line-height: 1.5;
+    padding: 32px 16px;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 48px 56px;
+    box-shadow: 0 1px 24px var(--shadow);
+    border: 1px solid var(--faint);
+  }
+  header { text-align: center; margin-bottom: 8px; }
+  h1 {
+    font-size: clamp(1.7rem, 5vw, 2.3rem);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin: 0 0 6px;
+  }
+  .contact { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+  .contact a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--faint); }
+  .contact a:hover { border-bottom-color: var(--muted); }
+  .sep { padding: 0 6px; }
+  section { margin-top: 18px; }
+  h2 {
+    font-size: 0.86rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid var(--rule);
+  }
+  p.summary { margin: 0; font-size: 0.95rem; }
+  .entry { margin-bottom: 12px; }
+  .row { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+  .row .left { min-width: 0; }
+  .org { font-weight: 700; }
+  .title { font-style: italic; }
+  .place, .dates { color: var(--muted); white-space: nowrap; font-size: 0.9rem; }
+  .dates { font-style: italic; }
+  ul { margin: 4px 0 0; padding-left: 18px; }
+  li { margin-bottom: 3px; font-size: 0.93rem; }
+  .skills { display: grid; gap: 4px; }
+  .skill { font-size: 0.93rem; }
+  .skill .label { font-weight: 700; }
+
+  .print-btn {
+    position: fixed;
+    top: 16px; right: 16px;
+    font-family: var(--serif);
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    background: var(--fg);
+    color: var(--bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 1px 8px var(--shadow);
+  }
+  .print-btn:hover { opacity: 0.88; }
+
+  @media (max-width: 480px) {
+    .page { padding: 28px 22px; }
+    .row { flex-direction: column; gap: 0; }
+    .place, .dates { white-space: normal; }
+  }
+  @media print {
+    :root { --bg: #fff; --paper: #fff; --fg: #000; --muted: #333; --rule: #000; --faint: #ccc; --shadow: transparent; color-scheme: light; }
+    body { padding: 0; }
+    .page { box-shadow: none; border: none; max-width: 100%; padding: 0.4in 0.5in; }
+    .print-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">Download PDF</button>
+<div class="page">
+  <header>
+    <h1>LOUIE MAY O. BARGASA</h1>
+    <div class="contact">
+      Sultan Kudarat, Philippines
+      <span class="sep">&bull;</span>
+      <a href="mailto:louiemay.online@gmail.com">louiemay.online@gmail.com</a>
+      <span class="sep">&bull;</span>
+      +63 961 614 8031
+      <span class="sep">&bull;</span>
+      <a href="https://www.linkedin.com/in/louie-may-bargasa-96b9a63a3/" target="_blank" rel="noopener">linkedin.com/in/louie-may-bargasa-96b9a63a3</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Lead Generation &amp; Automation Specialist with a Computer Science background. Combines B2B outbound outreach and CRM operations with no-code automation and web-app development to streamline prospecting, reporting, and follow-up for an education lead-generation platform.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="row"><div class="left"><span class="org">Notre Dame of Tacurong College</span></div><div class="place">Tacurong City, Philippines</div></div>
+      <div class="row"><div class="left"><span class="title">Bachelor of Science in Computer Science</span></div><div class="dates">April 2026</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="row"><div class="left"><span class="org">Dreambound</span></div><div class="place">Remote</div></div>
+      <div class="row"><div class="left"><span class="title">Lead Generation &amp; Automation Specialist</span></div><div class="dates">2026 &ndash; Present</div></div>
+      <ul>
+        <li>Run B2B outbound lead generation across LinkedIn and email, identifying and qualifying decision-makers at schools and education partners.</li>
+        <li>Manage lead records, outreach sequences, and attribution tracking in Attio CRM to keep the pipeline accurate and current.</li>
+        <li>Build automations in Make, Zapier, and Google Apps Script &mdash; including a Sequence Tracker dashboard, a Meeting Booked tracker, and automated sequence-reply Slack alerts.</li>
+        <li>Developed the LG Contact Hub, a web app on Cloudflare Workers integrating the Clay API, Skrapp, and Serper to intake, enrich, and sort contact data.</li>
+        <li>Produce Meta CAPI audit reports, Everflow click reports, and affiliate partner analytics for the demand-generation team.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><div class="left"><span class="org">Freelance &mdash; Amazon Sellers</span></div><div class="place">Remote</div></div>
+      <div class="row"><div class="left"><span class="title">Graphic Designer (Part-time)</span></div><div class="dates">2024 &ndash; 2025</div></div>
+      <ul>
+        <li>Edited and retouched product images for Amazon seller listings to strengthen visual presentation and listing quality.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills &amp; Tools</h2>
+    <div class="skills">
+      <div class="skill"><span class="label">Lead Generation:</span> LinkedIn and email outreach, prospecting, sequence management, CRM operations (Attio, HubSpot)</div>
+      <div class="skill"><span class="label">Administrative:</span> Data entry, scheduling, email and calendar management, record keeping, reporting</div>
+      <div class="skill"><span class="label">Automation:</span> Make, Zapier, Clay, Airtable, Google Apps Script</div>
+      <div class="skill"><span class="label">Data &amp; Analytics:</span> Meta CAPI, Everflow, lead tracking and attribution reporting</div>
+      <div class="skill"><span class="label">AI Tools:</span> Claude, ChatGPT, Gemini, Lovable</div>
+      <div class="skill"><span class="label">Technical:</span> Computer Science foundation; web apps on Cloudflare Workers</div>
+      <div class="skill"><span class="label">Other Tools:</span> Google Workspace, Canva, Skrapp, Serper</div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
